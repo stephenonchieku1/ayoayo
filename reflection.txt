@@ -1,0 +1,39 @@
+Initial Reflection:
+When I first approached the Ayoayo game implementation, I focused on understanding the core mechanics and rules. The game's structure reminded me of other Mancala-style games, but with its own unique rules. My initial plan was to:
+
+1. Create a Player class to manage each player's state (pits and store)
+2. Implement the Ayoayo class with the required methods
+3. Focus on the core game mechanics first, then add the special rules
+4. Ensure proper state management and validation
+
+The most challenging aspects I anticipated were:
+- Implementing the counter-clockwise movement of seeds
+- Handling the special rules correctly
+- Managing the game state transitions
+- Ensuring proper validation of moves
+
+Final Reflection:
+The implementation process went through several iterations to get the game logic correct. Here are the key points and challenges encountered:
+
+1. Game State Management:
+   - Initially, I struggled with tracking the last pit and player during seed distribution
+   - The solution was to maintain separate variables for the current and last positions
+   - This made it easier to implement both special rules correctly
+
+2. Special Rules Implementation:
+   - The first special rule (extra turn when last seed lands in store) required careful tracking of the last move
+   - The second special rule (capturing opponent's seeds) needed precise calculation of opposite pits
+   - Testing edge cases was crucial to ensure both rules worked correctly
+
+3. Code Organization:
+   - The Player class was kept simple, focusing on state management
+   - The Ayoayo class handles all game logic and rules
+   - Methods were designed to be clear and focused on single responsibilities
+
+4. Key Takeaways:
+   - Careful state tracking is essential for complex board games
+   - Testing edge cases early helps prevent bugs
+   - Clear method organization makes the code more maintainable
+   - The implementation successfully handles all game rules while maintaining clean code structure
+
+The final implementation meets all requirements and handles the game rules correctly, including both special rules and game ending conditions. The code is well-organized and maintainable, with clear separation of concerns between the Player and Ayoayo classes. 
